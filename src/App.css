@@ -1,0 +1,99 @@
+a, h1, h2, h3, h4,h5, h6, p{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  padding: 10px;
+  background-color: #ededed;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  overflow: hidden;
+}
+
+.main_header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task_box{
+  width: 500px;
+  min-height: 150px;
+  background-color: #ffedc5;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #6b4c0d;
+}
+
+.input_field{
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.input_field input{
+  outline: none;
+  border: 1px solid #ededed;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  color: #5c5c5c;
+  width: 100%;
+}
+
+.input_field button{
+  border: 1px solid #ededed;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  width: 25%;
+  background-color: #6b4c0d;
+  color: #ededed;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.input_field button:hover{
+  border: 1px solid #6b4c0d;
+  background-color: #ededed;
+  color: #6b4c0d;
+}
+
+.task_list{
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.task_list .task{
+  border-bottom: 1px solid #ededed;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task_list .task:first-child{
+  padding-top: 0;
+}
+
+.task_list .task:last-child{
+  border-bottom: none;
+  padding: 0;
+}
+
+.task_list .task button{
+  background-color: rgb(255, 51, 0);
+  border: none;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #ededed;
+  font-size: 12px;
+}
