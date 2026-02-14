@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import TaskInput from './components/TaskInput';
@@ -9,14 +8,19 @@ function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (newTask) => {
-    setTasks((prev) => [...prev, newTask]);
+    setTasks((prev) => [...prev, {
+      id: Math.random(),
+      text: newTask,
+      isCompleted: false,
+      createdAt: Date.now()
+    }]);
   }
 
   const removeTask = (indexToRemove) => {
     setTasks((prevTasks) => {
-      return prevTasks.filter((_, index) => index !== indexToRemove)
+      return prevTasks.filter((task, index) => task.id !== indexToRemove);
     });
-  }
+  };
 
   return (
     <div className="App">

@@ -89,6 +89,13 @@ a, h1, h2, h3, h4,h5, h6, p{
   padding: 0;
 }
 
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .task_list .task button{
   background-color: rgb(255, 51, 0);
   border: none;
@@ -96,4 +103,17 @@ a, h1, h2, h3, h4,h5, h6, p{
   border-radius: 3px;
   color: #ededed;
   font-size: 12px;
+  cursor: pointer;
+}
+
+.task_list .task .buttons .complete_button{
+  background-color: greenyellow;
+  color: #6b4c0d;
+}
+
+.task_list .task .buttons .complete_button.true{
+  background-color: grey;
+  color: white;
+  pointer-events: none;
+  opacity: 0.5;
 }
